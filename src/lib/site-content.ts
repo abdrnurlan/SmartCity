@@ -73,7 +73,7 @@ export const homePreviewCards = [
     href: "/media",
     title: "Media",
     description:
-      "A dedicated page for the loopable hero video, AI images, and visual evidence that supports the narrative.",
+      "A dedicated page for the homepage image sequence, the AI video piece, and visual evidence that supports the narrative.",
   },
   {
     href: "/sources-prompts",
@@ -157,10 +157,22 @@ export const urbanSystemDetails = [
 
 export const mediaPlan = [
   {
-    title: "Hero video",
-    format: "Loopable 16:9 video",
+    title: "Homepage evening frame",
+    format: "16:9 still image",
     description:
-      "An aerial scene of Almaty 2050 that sets the visual tone for the homepage and the media page.",
+      "The transition frame between daylight and night, used to make the homepage cover feel cinematic and controlled.",
+  },
+  {
+    title: "Homepage day frame",
+    format: "16:9 still image",
+    description:
+      "The main daylight frame for the homepage cover, with mountains, clean skyline, and calm editorial light.",
+  },
+  {
+    title: "Homepage night frame",
+    format: "16:9 still image",
+    description:
+      "The matching evening frame for the homepage auto-transition, with city lights and the same camera angle.",
   },
   {
     title: "Mobility still",
@@ -169,7 +181,7 @@ export const mediaPlan = [
       "A realistic AI-generated scene showing cleaner transport and calmer public movement.",
   },
   {
-    title: "Energy and environment still",
+    title: "Environment still",
     format: "Editorial image",
     description:
       "A premium architectural image that shows solar integration, greenery, and controlled urban density.",
@@ -211,21 +223,27 @@ export const sourceLinks: SourceLink[] = [
 
 export const promptLibrary: PromptItem[] = [
   {
-    title: "Hero aerial still",
+    title: "Hero evening frame",
     tool: "ChatGPT Imagen",
     prompt:
-      "Editorial aerial photograph of Almaty in 2050 at golden hour, warm sunlight, clean skyline, modern low-emission transport corridors, subtle vertical gardens, snow-covered mountains in the distance, photoreal, premium architecture magazine style, no neon, no sci-fi cliches, 16:9.",
+      "The same panoramic Almaty 2050 composition as the approved daylight frame, identical camera angle and skyline layout, sunset light behind the mountains, the city beginning to glow, warm reflections on glass, subtle road lights emerging, premium architectural realism, sharp detail, 16:9.",
   },
   {
-    title: "Mobility concept image",
+    title: "Hero day frame",
     tool: "ChatGPT Imagen",
     prompt:
-      "Street-level editorial photograph of a future Almaty mobility hub, electric transit, calm pedestrian zone, warm natural light, realistic materials, clean premium urban design, photoreal, 4:5.",
+      "Editorial panoramic photograph of Almaty in 2050, elevated overlook, centered skyline, snow-covered mountains spanning the full background, warm late-afternoon sunlight, premium glass-and-stone architecture, realistic road network, calm city atmosphere, photoreal, architecture magazine style, no neon, no sci-fi cliches, no exaggerated perspective, 16:9.",
   },
   {
-    title: "Loop video prompt",
-    tool: "Video model",
+    title: "Hero night frame",
+    tool: "ChatGPT Imagen",
     prompt:
-      "8-second cinematic aerial shot over Almaty in 2050, golden hour, clear atmosphere, modern sustainable skyline, mountain backdrop, subtle traffic light trails, slow smooth camera motion, photoreal, loopable start and end frames, 16:9, no text overlays.",
+      "The same panoramic Almaty 2050 composition as the approved daylight frame, identical camera angle and skyline layout, blue-hour sky, building lights glowing on, streetlights and traffic light trails subtle and elegant, mountains still visible, sharp architectural detail, photoreal, premium city photography, 16:9.",
+  },
+  {
+    title: "AI video piece",
+    tool: "Kling or Veo",
+    prompt:
+      "Create a calm premium AI video for the Almaty 2050 project using the same skyline composition. No aggressive camera movement, no drone fly-through. Preserve the framing and animate the shift from warm daylight through sunset into blue hour, with subtle lights turning on and very soft cloud motion. Keep the result sharp, realistic, and presentation-friendly.",
   },
 ];
