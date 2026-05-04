@@ -27,3 +27,4 @@ npm run dev
 
 - Media files can be placed in `public/media`
 - Presentation notes and prompts live in `docs/presentation-kit.md`
+- Vercel deployment steps live in `docs/vercel-deploy.md`
