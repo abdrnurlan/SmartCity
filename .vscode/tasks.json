@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Copy hero images",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-Command",
+				"Copy-Item -LiteralPath 'C:\\Users\\abdra\\Downloads\\evening.png' -Destination 'C:\\Users\\abdra\\Projects\\almatycity\\public\\media\\hero-evening.jpg' -Force; Copy-Item -LiteralPath 'C:\\Users\\abdra\\Downloads\\morning.png' -Destination 'C:\\Users\\abdra\\Projects\\almatycity\\public\\media\\hero-day.jpg' -Force; Copy-Item -LiteralPath 'C:\\Users\\abdra\\Downloads\\night.png' -Destination 'C:\\Users\\abdra\\Projects\\almatycity\\public\\media\\hero-night.jpg' -Force"
+			],
+			"isBackground": false
+		}
+	]
+}
