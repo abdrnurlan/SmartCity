@@ -4,7 +4,7 @@ import { mediaPlan, promptLibrary } from "@/lib/site-content";
 
 export default function MediaPage() {
   return (
-    <div className="page-grid pb-12">
+    <div className="pb-12">
       <PageHero
         eyebrow="Media"
         title="AI images and AI video shape the project language together."

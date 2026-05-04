@@ -241,6 +241,18 @@ export const promptLibrary: PromptItem[] = [
       "The same panoramic Almaty 2050 composition as the approved daylight frame, identical camera angle and skyline layout, blue-hour sky, building lights glowing on, streetlights and traffic light trails subtle and elegant, mountains still visible, sharp architectural detail, photoreal, premium city photography, 16:9.",
   },
   {
+    title: "Mobility still",
+    tool: "ChatGPT Imagen",
+    prompt:
+      "Street-level view of Almaty 2050, wide tree-lined boulevard, electric light rail tram passing on dedicated track, pedestrian zone with people walking and cycling, no private cars visible, warm afternoon light, clean modern architecture, ultra-realistic architectural photography, 16:9.",
+  },
+  {
+    title: "Environment still",
+    tool: "ChatGPT Imagen",
+    prompt:
+      "Rooftop terrace of a modern Almaty 2050 building, integrated solar panel arrays, planted green rooftop garden, Zailiysky Alatau mountains visible in background, blue sky, warm afternoon light, premium real-estate architectural photography, sharp detail, 16:9.",
+  },
+  {
     title: "AI video piece",
     tool: "Kling or Veo",
     prompt:

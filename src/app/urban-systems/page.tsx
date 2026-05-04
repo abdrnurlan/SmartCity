@@ -1,10 +1,10 @@
 import { PageHero } from "@/components/page-hero";
 import { SectionShell } from "@/components/section-shell";
-import { systemHighlights, urbanSystemDetails } from "@/lib/site-content";
+import { urbanSystemDetails } from "@/lib/site-content";
 
 export default function UrbanSystemsPage() {
   return (
-    <div className="page-grid pb-12">
+    <div className="pb-12">
       <PageHero
         eyebrow="Urban Systems"
         title="The city concept is organized around systems, not loose ideas."
@@ -16,17 +16,44 @@ export default function UrbanSystemsPage() {
         title="Three systems carry most of the story."
         intro="Mobility, energy, and public realm work together. Treating them as one connected framework makes the concept clearer and more believable."
       >
-        <div className="grid gap-5 md:grid-cols-3">
-          {systemHighlights.map((item) => (
+        <div className="grid gap-4 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+          {[
+            {
+              metric: "Mobility",
+              title: "Low-friction transit",
+              description: "Smart routing, clean electric transport, and fewer private car bottlenecks create a city that moves with less stress.",
+              image: "/media/mobility.png",
+            },
+            {
+              metric: "Energy",
+              title: "Distributed clean power",
+              description: "Solar roofs, adaptive lighting, and efficient building envelopes make urban growth less resource heavy.",
+              image: "/media/energy.png",
+            },
+            {
+              metric: "Environment",
+              title: "Better urban comfort",
+              description: "More shade, more planting, and smarter public-space design improve daily life while reducing environmental pressure.",
+              image: "/media/vision.png",
+            },
+          ].map((item) => (
             <article
-              key={item.title}
-              className="surface-shadow rounded-[1.6rem] border border-line/70 bg-surface px-6 py-7"
+              key={item.metric}
+              className="relative min-h-[30rem] overflow-hidden rounded-[1.8rem]"
+              style={{ backgroundImage: `url('${item.image}')`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
-              <p className="text-sm font-semibold text-accent-strong">{item.metric}</p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-foreground">
-                {item.title}
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-muted">{item.description}</p>
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(5,7,12,0.12)_0%,rgba(5,7,12,0.22)_40%,rgba(5,7,12,0.72)_75%,rgba(5,7,12,0.90)_100%)]" />
+              <div className="absolute inset-x-0 bottom-0 p-7">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#efbf63]">
+                  {item.metric}
+                </p>
+                <h2 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white">
+                  {item.title}
+                </h2>
+                <p className="mt-3 text-sm leading-7 text-white/68">
+                  {item.description}
+                </p>
+              </div>
             </article>
           ))}
         </div>
