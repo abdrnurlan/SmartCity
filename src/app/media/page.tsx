@@ -81,6 +81,35 @@ export default function MediaPage() {
       </SectionShell>
 
       <SectionShell
+        eyebrow="New visual"
+        title="Almaty 2050 — city of the future with a view of the mountains."
+        intro="A panoramic blue-hour concept image that combines the Zailiysky Alatau skyline with a futuristic urban foreground, elevated transit, and intelligent street lighting."
+      >
+        <div className="surface-shadow overflow-hidden rounded-[2rem] border border-line/70 bg-surface">
+          <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9" }}>
+            <img
+              src="/media/almaty-future-mountains.svg"
+              alt="Almaty 2050 — futuristic city panorama with Zailiysky Alatau mountains"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="px-8 py-7">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent-strong">
+              Concept image · Blue hour
+            </p>
+            <h2 className="mt-4 text-2xl font-semibold leading-tight tracking-tight text-foreground">
+              Zailiysky Alatau as the permanent backdrop of the smart city.
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-muted">
+              The mountains anchor every visual in the project. This blue-hour panorama places the
+              futuristic skyline, elevated transit corridor, and green boulevard against the same
+              snow-capped range that defines Almaty's identity.
+            </p>
+          </div>
+        </div>
+      </SectionShell>
+
+      <SectionShell
         eyebrow="Planned assets"
         title="The media set should be small, clean, and intentional."
         intro="A compact set of strong AI visuals makes the project look more serious than a long gallery of weak experiments."
@@ -101,7 +130,9 @@ export default function MediaPage() {
                         ? "linear-gradient(135deg, #10192a, #314b79)"
                         : index === 2
                           ? "linear-gradient(135deg, #efe0c7, #f8f1e6)"
-                          : "linear-gradient(135deg, #ead7b6, #cab089)",
+                          : index === 5
+                            ? "linear-gradient(135deg, #0d1a3a, #3a6898)"
+                            : "linear-gradient(135deg, #ead7b6, #cab089)",
                 }}
               />
               <div className="px-6 py-6">

@@ -186,6 +186,12 @@ export const mediaPlan = [
     description:
       "A premium architectural image that shows solar integration, greenery, and controlled urban density.",
   },
+  {
+    title: "Almaty mountains panorama",
+    format: "16:9 concept image",
+    description:
+      "Panoramic view of Almaty 2050 at blue hour with the Zailiysky Alatau mountains as a backdrop, futuristic skyline, and a lit elevated transit corridor in the foreground.",
+  },
 ];
 
 export const presentationOutline = [
@@ -257,5 +263,11 @@ export const promptLibrary: PromptItem[] = [
     tool: "Kling or Veo",
     prompt:
       "Create a calm premium AI video for the Almaty 2050 project using the same skyline composition. No aggressive camera movement, no drone fly-through. Preserve the framing and animate the shift from warm daylight through sunset into blue hour, with subtle lights turning on and very soft cloud motion. Keep the result sharp, realistic, and presentation-friendly.",
+  },
+  {
+    title: "Almaty mountains panorama",
+    tool: "ChatGPT Imagen",
+    prompt:
+      "Panoramic concept image of Almaty 2050 at blue hour, elevated viewpoint, snow-capped Zailiysky Alatau mountains spanning the full background, futuristic glass-and-steel skyline with glowing tower facades and horizontal light bands, elevated electric light-rail crossing the mid-ground, wide green boulevard with intelligent street lighting, no neon, no sci-fi excess, premium architectural realism, 16:9.",
   },
 ];
