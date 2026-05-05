@@ -81,7 +81,7 @@ export default function MediaPage() {
       </SectionShell>
 
       <SectionShell
-        eyebrow="New visual"
+        eyebrow="Concept image"
         title="Almaty 2050 — city of the future with a view of the mountains."
         intro="A panoramic blue-hour concept image that combines the Zailiysky Alatau skyline with a futuristic urban foreground, elevated transit, and intelligent street lighting."
       >
@@ -115,25 +115,14 @@ export default function MediaPage() {
         intro="A compact set of strong AI visuals makes the project look more serious than a long gallery of weak experiments."
       >
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {mediaPlan.map((item, index) => (
+          {mediaPlan.map((item) => (
             <article
               key={item.title}
               className="surface-shadow overflow-hidden rounded-[1.7rem] border border-line/70 bg-surface"
             >
               <div
                 className="h-48 border-b border-line/70"
-                style={{
-                  background:
-                    index === 0
-                      ? "linear-gradient(135deg, #f6e6cb, #d6b37a)"
-                      : index === 1
-                        ? "linear-gradient(135deg, #10192a, #314b79)"
-                        : index === 2
-                          ? "linear-gradient(135deg, #efe0c7, #f8f1e6)"
-                          : index === 5
-                            ? "linear-gradient(135deg, #0d1a3a, #3a6898)"
-                            : "linear-gradient(135deg, #ead7b6, #cab089)",
-                }}
+                style={{ background: item.gradient }}
               />
               <div className="px-6 py-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent-strong">

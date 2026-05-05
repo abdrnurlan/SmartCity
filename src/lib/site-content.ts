@@ -159,36 +159,42 @@ export const mediaPlan = [
   {
     title: "Homepage evening frame",
     format: "16:9 still image",
+    gradient: "linear-gradient(135deg, #f6e6cb, #d6b37a)",
     description:
       "The transition frame between daylight and night, used to make the homepage cover feel cinematic and controlled.",
   },
   {
     title: "Homepage day frame",
     format: "16:9 still image",
+    gradient: "linear-gradient(135deg, #10192a, #314b79)",
     description:
       "The main daylight frame for the homepage cover, with mountains, clean skyline, and calm editorial light.",
   },
   {
     title: "Homepage night frame",
     format: "16:9 still image",
+    gradient: "linear-gradient(135deg, #efe0c7, #f8f1e6)",
     description:
       "The matching evening frame for the homepage auto-transition, with city lights and the same camera angle.",
   },
   {
     title: "Mobility still",
     format: "Portrait or landscape image",
+    gradient: "linear-gradient(135deg, #ead7b6, #cab089)",
     description:
       "A realistic AI-generated scene showing cleaner transport and calmer public movement.",
   },
   {
     title: "Environment still",
     format: "Editorial image",
+    gradient: "linear-gradient(135deg, #ead7b6, #cab089)",
     description:
       "A premium architectural image that shows solar integration, greenery, and controlled urban density.",
   },
   {
     title: "Almaty mountains panorama",
     format: "16:9 concept image",
+    gradient: "linear-gradient(135deg, #0d1a3a, #3a6898)",
     description:
       "Panoramic view of Almaty 2050 at blue hour with the Zailiysky Alatau mountains as a backdrop, futuristic skyline, and a lit elevated transit corridor in the foreground.",
   },
